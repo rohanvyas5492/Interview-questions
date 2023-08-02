@@ -4,7 +4,13 @@ export default function App() {
   return (
     <div className="App">
       <h1>Popover</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <div className="popover">
+        <button>Hover Me</button>
+        <div className="popover-content">
+          <h2>Heading</h2>
+          <p>Content</p>
+        </div>
+      </div>
     </div>
   );
 }
