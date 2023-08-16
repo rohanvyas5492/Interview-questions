@@ -2,7 +2,7 @@
   width: 200px;
   height: 200px;
   background-color: pink;
-  /* border-radius: 50%; */
+  border-radius: 50%;
   border: 5px solid black;
   margin-top: 20px;
   position: relative;
@@ -79,6 +79,10 @@
   right: 50%;
   transform: translateX(50%);
   /**********************/
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .nostril {

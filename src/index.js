@@ -1,13 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-import InfiniteScroll from "./InfiniteScroll/InfiniteScroll";
+import PigEmoji from "./CSS/PigEmoji/PigEmoji";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <InfiniteScroll />
+    <PigEmoji />
   </StrictMode>
 );
