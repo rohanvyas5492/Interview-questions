@@ -1,13 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-import PigEmoji from "./CSS/PigEmoji/PigEmoji";
+import CustomModal from "./Custom-Modal/Custom-Modal";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <PigEmoji />
+    <CustomModal />
   </StrictMode>
 );
