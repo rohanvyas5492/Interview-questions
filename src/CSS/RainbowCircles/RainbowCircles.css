@@ -1,0 +1,31 @@
+:root{
+    --circle-thickness: 25px;
+}
+
+div {
+    border-radius: 50%;
+}
+
+.outer {
+    background-color: #ffa500;
+    width: 200px;
+    height: 200px;
+    border: 25px solid #ff0000;
+    padding: 25px;
+}
+
+.middle {
+    background-color: #008000;
+    width: 100px;
+    height: 100px;
+    border: 25px solid #ffff00;
+    padding: 25px;
+}
+
+.inner {
+    --purple-size: calc(var(--circle-thickness) * 2);
+    height: var(--purple-size);
+    width: var(--purple-size);
+    background-color: #800080;
+    border: var(--circle-thickness) solid #0000ff;
+}

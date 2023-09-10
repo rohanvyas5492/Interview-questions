@@ -1,13 +1,13 @@
-import { StrictMode } from "react";
+  import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-import CustomModal from "./Custom-Modal/Custom-Modal";
+import SignUpForm from "./CSS/SignUpForm/SignUpForm";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <CustomModal />
+    <SignUpForm />
   </StrictMode>
 );
