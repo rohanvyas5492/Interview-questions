@@ -21,6 +21,10 @@ module.exports = {
         test: /\.css$/, // Add a rule for CSS files
         use: ['style-loader', 'css-loader'], // Use style-loader and css-loader for .css files
       },
+      {
+        test: /\.scss$/, // Add a rule for SCSS files
+        use: ['style-loader', 'css-loader', 'sass-loader'], // Use style-loader, css-loader, and sass-loader for .scss files
+      }
     ],
   },
   plugins: [
