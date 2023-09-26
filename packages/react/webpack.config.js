@@ -5,7 +5,7 @@ module.exports = {
   entry: './src/index.tsx',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'lib'),
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
@@ -21,6 +21,10 @@ module.exports = {
         test: /\.css$/, // Add a rule for CSS files
         use: ['style-loader', 'css-loader'], // Use style-loader and css-loader for .css files
       },
+      {
+        test: /\.scss$/, // Add a rule for SCSS files
+        use: ['style-loader', 'css-loader', 'sass-loader'], // Use style-loader, css-loader, and sass-loader for .scss files
+      }
     ],
   },
   plugins: [
@@ -29,7 +33,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    static: path.join(__dirname, 'dist'),
+    static: path.join(__dirname, 'lib'),
     port: 3000,
     open: true,
   },
