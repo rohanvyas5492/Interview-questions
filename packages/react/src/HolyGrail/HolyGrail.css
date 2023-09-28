@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.parent {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+}
+
+.parent header {
+    grid-area: 1/1/2/4;
+    background-color: red;
+}
+.parent footer {
+    grid-area: 3/1/4/4;
+    background-color: blue;
+    color: white;
+}
+.parent .left-sidebar {
+    background-color: green;
+}
+.parent .right-sidebar {
+    background-color: rgb(122, 128, 0);
+}
+.parent main {
+    background-color: rgb(206, 4, 176);
+}
