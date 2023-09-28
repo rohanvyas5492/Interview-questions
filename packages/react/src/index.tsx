@@ -1,12 +1,12 @@
 import { createRoot } from "react-dom/client";
 import React from "react";
-import StarRating from "./StarRating/StarRating";
+import HolyGrail from "./HolyGrail/HolyGrail";
 
 const rootElement = document.getElementById("root");
 
 if (rootElement) {
   const root = createRoot(rootElement);
-  root.render(<StarRating total={5} value={2}/>);
+  root.render(<HolyGrail/>);
 } else {
   console.error("Element with id 'root' not found in the DOM.");
 }
